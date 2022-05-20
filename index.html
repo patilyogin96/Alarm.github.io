@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alarm Clock</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- div for main container of alarm clock -->
+    <div class="container">
+      <h1 style="text-align: center">Alarm Clock</h1>
+      <section>
+        <!-- div to show the current time which keeps changing after every seconds -->
+        <div id="cur-time">4:15:35</div>
+
+        <!-- form with input to set alarms  -->
+
+        <form action="" class="alarm-setter">
+          <div id="alarm-set">
+            <input
+              type="number"
+              id="new_al_hrs"
+              placeholder="Hrs"
+              max="12"
+              min="00"
+            />:
+            <input
+              type="number"
+              id="new_al_mins"
+              placeholder="Mins"
+              max="59"
+              min="00"
+            />:
+            <input
+              type="number"
+              id="new_al_secs"
+              placeholder="Sec"
+              max="59"
+              min="00"
+            />
+            <select name="" id="new_al_ampm">
+              <option value="AM">AM</option>
+              <option value="PM">PM</option>
+            </select>
+          </div>
+
+          <div>
+            <!-- button to set alarm -->
+            <button><h3>Set Alarm</h3></button>
+          </div>
+        </form>
+      </section>
+
+      <!-- section which shows the alarm list -->
+
+      <section>
+        <div class="divlist"><h2>Alarms</h2></div>
+
+        <div>
+          <ul id="alarm-list"></ul>
+        </div>
+      </section>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

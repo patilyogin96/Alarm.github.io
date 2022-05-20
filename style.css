@@ -1,0 +1,97 @@
+
+/* body{
+    background-image: linear-gradient(blue,black);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+} */
+
+
+
+.container{
+    width: 500px;
+    height: 500px;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin: auto;
+    /* background-color: rgb(5, 5, 10); */
+    background-image: linear-gradient(black,rgb(99, 94, 121));
+    color: rgb(12, 226, 241);
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 4px;
+}
+
+#cur-time{
+    font-size: 60px;
+    text-align: center;
+    margin-top: 30px;
+
+}
+
+#alarm-set{
+    display: flex;
+    align-items: center;
+    /* margin-left: 70px; */
+    color: white;
+    font-size: 15px;
+
+}
+
+#alarm-set input{
+    width: 45px;
+    height: 20px;
+    background-color: white;
+    padding: 5px;
+    font-size: 15px;
+    
+} 
+
+#alarm-set select{
+   width: 50px; 
+   height: 32px;
+   background-color: white;
+   margin-left: 4px;
+}
+
+
+.alarm-setter{
+    display: flex;
+    justify-content: space-around;
+    /* margin-top: 25px; */
+    margin: 25px;
+}
+
+.alarm-setter h3{
+    margin: 4px;
+}
+
+#alarm-list  li{
+    list-style-type: none;
+}
+
+
+.divlist h2{
+    text-align: center;
+}
+
+
+#alarm-list li{
+    border: 2px solid #897676;
+    width: 410px;
+    height: 30px;
+    font-size: 28px;
+    background-color: #201615;
+    border-radius: 4px;
+    padding: 7px;
+    margin: 3px;
+}
+
+#alarm-list li button{
+    margin-left: 305px;
+    position: relative;
+    top: -42px;
+    height: 30px;
+    /* margin: 3px; */
+    
+    
+}
